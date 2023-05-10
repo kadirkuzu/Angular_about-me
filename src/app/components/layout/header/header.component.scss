@@ -1,12 +1,15 @@
 .header{
-    background-color: var(--bs-gray-500);
+    background-color:white;
     padding: 25px 0;
 }
 .about-me{
-    color: var(--bs-gray-800);
-    font-weight: 700;
-    font-size: 40px;
+    flex: 0 0 auto;
+    width: 13%;
     cursor: pointer;
+    img{
+        width: 100%;
+        height: auto;
+    }
 }
 .title{
     display: inline-block;
