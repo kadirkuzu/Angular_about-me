@@ -1,0 +1,19 @@
+.header{
+    background-color: var(--bs-gray-500);
+    padding: 25px 0;
+}
+.about-me{
+    color: var(--bs-gray-800);
+    font-weight: 700;
+    font-size: 40px;
+    cursor: pointer;
+}
+.title{
+    display: inline-block;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    &:hover{
+        padding-bottom: 10px;
+    }
+}
