@@ -1,33 +1,46 @@
 <header class="header">
     <div class="container d-flex">
-        <div class="row align-items-center w-100">
-            <div class="about-me">
-                <img src="../../../../assets/images/about-me.jpg">
+        <div class="row align-items-center">
+            <div class="col-4 col-lg-2">
+                <div class="about-me">
+                    <img src="../../../../assets/images/about-me.jpg">
+                </div>
             </div>
-            <div class="col text-center">
-                <span class="title">
-                    My City
-                </span>
+            <div class="col-10 collapse">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <span class="title">
+                            My City
+                        </span>
+                    </div>
+                    <div class="col">
+                        <span class="title">
+                            Our Legacy
+                        </span>
+                    </div>
+                    <div class="col">
+                        <span class="title">
+                            My interests
+                        </span>
+                    </div>
+                    <div class="col">
+                        <span class="title">
+                            Contact
+                        </span>
+                    </div>
+                    <div class="col text-end title login" >
+                        Login
+                    </div>
+                </div>
             </div>
-            <div class="col">
-                <span class="title">
-                    Our Legacy
-                </span>
-            </div>
-            <div class="col">
-                <span class="title">
-                    My interests
-                </span>
-            </div>
-            <div class="col">
-                <span class="title">
-                    Contact
-                </span>
-            </div>
-            <div class="col d-flex justify-content-end">
-                <span>
-                    Login
-                </span>
+            <div class="col-8">
+                <div class="d-flex justify-content-end">
+                    <div [ngClass]="{'change' : openBar}" class="bar" (click)="openBar = !openBar">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

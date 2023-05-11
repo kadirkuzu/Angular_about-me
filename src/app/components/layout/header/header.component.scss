@@ -4,7 +4,7 @@
 }
 .about-me{
     flex: 0 0 auto;
-    width: 13%;
+    width: 80%;
     cursor: pointer;
     img{
         width: 100%;
@@ -15,8 +15,50 @@
     display: inline-block;
     font-weight: 500;
     font-size: 20px;
+    padding-bottom: 2px;
     cursor: pointer;
     &:hover{
         padding-bottom: 10px;
+    }
+    &.login{
+        padding-bottom: 0 !important;
+    }
+}
+
+@media (min-width:992px){
+    .collapse{
+        display: block;
+    }
+    .bar{
+        display: none;
+    }
+}
+@media (max-width:992px){
+    .header{
+        padding: 10px 0;
+    }
+    .bar{
+        display: block;
+        margin-left: 30px;
+    }
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: var(--bs-gray-800);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change {
+    .bar1{
+        transform: translate(0, 11px) rotate(-45deg);
+    }
+    .bar2 {
+        opacity: 0
+    }
+    .bar3 {
+        transform: translate(0, -11px) rotate(45deg);
     }
 }
