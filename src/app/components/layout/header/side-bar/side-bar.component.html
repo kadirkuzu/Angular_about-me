@@ -1,0 +1,16 @@
+<div class="offcanvas offcanvas-start" tabindex="-1" id="sideBarCanvas" aria-labelledby="sideBarCanvasLabel" #sideBarCanvas>
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="sideBarCanvasLabel">About Me</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" #closeSideBarCanvas></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="d-flex h-100">
+            <div class="sidebar-link">
+                <div class="fw-bold" (click)="closeOffCanvas()">My City</div>
+                <div class="fw-bold" (click)="closeOffCanvas()">Our Legacy</div>
+                <div class="fw-bold" (click)="closeOffCanvas()">My interests</div>
+                <div class="fw-bold" (click)="closeOffCanvas()">Contact</div>  
+            </div>
+        </div>
+    </div>
+</div>

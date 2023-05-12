@@ -34,8 +34,9 @@
                 </div>
             </div>
             <div class="col-8">
-                <div class="d-flex justify-content-end">
-                    <div [ngClass]="{'change' : openBar}" class="bar" (click)="openBar = !openBar">
+                <div class="d-flex justify-content-end"  >
+                    <div [ngClass]="{'change' : openBar}" class="bar" (click)="openBar = !openBar"
+                     data-bs-toggle="offcanvas" data-bs-target="#sideBarCanvas" aria-controls="sideBarCanvas" >
                         <div class="bar1"></div>
                         <div class="bar2"></div>
                         <div class="bar3"></div>
@@ -45,3 +46,4 @@
         </div>
     </div>
 </header>
+<app-side-bar (closeEvent)="openBar = !openBar"></app-side-bar>
