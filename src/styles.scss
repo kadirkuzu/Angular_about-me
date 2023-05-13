@@ -14,3 +14,10 @@ body {
 body {
     background-color: var(--bs-gray-300);
 }
+
+.main-card{
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 8px var(--bs-gray-500);
+}

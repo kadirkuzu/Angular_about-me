@@ -7,6 +7,12 @@ import { HomePageComponent } from './components/pages/home-page/home-page.compon
 import { HeaderComponent } from './components/layout/header/header.component';
 import { FooterComponent } from './components/layout/footer/footer.component';
 import { SideBarComponent } from './components/layout/header/side-bar/side-bar.component';
+import { MyCityComponent } from './components/pages/my-city/my-city.component';
+import { OurLegacyComponent } from './components/pages/our-legacy/our-legacy.component';
+import { MyInterestsComponent } from './components/pages/my-interests/my-interests.component';
+import { ContactComponent } from './components/pages/contact/contact.component';
+import { LoginComponent } from './components/pages/account/login/login.component';
+import { SignUpComponent } from './components/pages/account/sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +20,13 @@ import { SideBarComponent } from './components/layout/header/side-bar/side-bar.c
     HomePageComponent,
     HeaderComponent,
     FooterComponent,
-    SideBarComponent
+    SideBarComponent,
+    MyCityComponent,
+    OurLegacyComponent,
+    MyInterestsComponent,
+    ContactComponent,
+    LoginComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
