@@ -13,6 +13,9 @@ import { MyInterestsComponent } from './components/pages/my-interests/my-interes
 import { ContactComponent } from './components/pages/contact/contact.component';
 import { LoginComponent } from './components/pages/account/login/login.component';
 import { SignUpComponent } from './components/pages/account/sign-up/sign-up.component';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,14 @@ import { SignUpComponent } from './components/pages/account/sign-up/sign-up.comp
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot({
+      closeButton: true,
+      progressBar: true,
+      positionClass:"toast-top-right"
+    }),
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

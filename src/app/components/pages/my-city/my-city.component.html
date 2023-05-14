@@ -1,1 +1,7 @@
-<p>my-city works!</p>
+<div class="swiper-container">
+    <swiper [config]="config">
+        <ng-template *ngFor="let item of [0,1,2]; index as index" swiperSlide>
+            <img src="../../../../assets/images/siirt-fistigi.jpg">
+        </ng-template>
+    </swiper>
+</div>
