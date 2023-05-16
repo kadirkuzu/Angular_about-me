@@ -21,7 +21,7 @@ body {
 .main-card{
     background-color: white;
     border-radius: 5px;
-    padding: 10px;
+    padding: 10px 30px;
     box-shadow: 0 0 8px var(--bs-gray-500);
 }
 
@@ -66,4 +66,10 @@ body {
     &:hover{
         background-color: var(--bs-gray-600);
     }
+}
+
+.router-text{
+    cursor: pointer;
+    color: $primary;
+    font-weight: 600;
 }

@@ -16,6 +16,7 @@ import { SignUpComponent } from './components/pages/account/sign-up/sign-up.comp
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SwiperModule } from 'swiper/angular';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,9 @@ import { SwiperModule } from 'swiper/angular';
       progressBar: true,
       positionClass:"toast-top-right"
     }),
-    SwiperModule
+    SwiperModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
