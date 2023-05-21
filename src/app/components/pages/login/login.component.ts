@@ -23,8 +23,13 @@ export class LoginComponent {
   }
 
   login(){
-    // this.http.post('http://localhost/backend', {email:this.email!.value,password:this.password!.value})
-    //   .subscribe(response => {
-    //   });
+    let form = new FormData();
+    form.append('email', this.email!.value!);
+    form.append('password', this.password!.value!);
+    this.http.post('http://kadirkuzu.42web.io/login.php', form)
+      .subscribe(response => {
+        console.log(response);
+        
+      });
   }
 }
