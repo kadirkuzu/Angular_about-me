@@ -2,7 +2,7 @@
 $email = $_POST["email"];
 $password = $_POST["password"];
 
-if (($email == "g221210351" || $email == "kadirkuzu.5656@gmail.com" ) && $password == "123456") {
+if (($email == "g221210351" || $email == "g221210351@sakarya.edu.tr" ) && $password == "g221210351") {
     $response = array('result' => true, 'message' => 'Hoşgeldiniz ' . $email);
 } else {
     $response = array('result' => false, 'message' => 'Hatalı giriş');
