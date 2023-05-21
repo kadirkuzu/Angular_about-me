@@ -9,7 +9,7 @@ import { ToastrService } from 'ngx-toastr';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
-  constructor(private toastr : ToastrService,private http: HttpClient) { }
+  error = false
 
   loginForm = new FormGroup({
     email: new FormControl('', [Validators.required]),
@@ -19,7 +19,10 @@ export class LoginComponent {
   get email() { return this.loginForm.get('email') }
   get password() { return this.loginForm.get('password') }
 
+  constructor(private toastr : ToastrService,private http: HttpClient) { }
+
   ngOnInit(): void {
+    this.loginForm.valueChanges.subscribe(data=>this.error = false)
   }
 
   login(){
@@ -29,7 +32,10 @@ export class LoginComponent {
     this.http.post('http://kadirkuzu.42web.io/login.php', form)
       .subscribe((response:any) => {
         if(response.result) this.toastr.success(response.message,'Success')
-        if(!response.result) this.toastr.error(response.message,'Error')
+        if(!response.result){
+          this.toastr.error(response.message,'Error')
+          this.error = true
+        } 
       });
   }
 }

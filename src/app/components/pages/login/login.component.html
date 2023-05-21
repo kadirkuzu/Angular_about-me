@@ -4,13 +4,13 @@
             <form [formGroup]="loginForm">
                 <div class="mb-3">
                     <label for="email" class="form-label">Email veya kullanıcı adı</label>
-                    <input [ngClass]="{ 'is-invalid': email?.invalid   && (email?.dirty || email?.touched)}" formControlName="email"
+                    <input [ngClass]="{ 'is-invalid': (email?.invalid||error)   && (email?.dirty || email?.touched)}" formControlName="email"
                         type="text" class="form-control" id="email" placeholder="Email veya kullanıcı adı">
                 </div>
                 <div class="mb-3">
                     <label for="password" class="form-label">Şifre</label>
                     <div class="w-100 position-relative">
-                        <input #password1 [ngClass]="{ 'is-invalid': password?.invalid   && (password?.dirty || password?.touched)}" formControlName="password"
+                        <input #password1 [ngClass]="{ 'is-invalid': (password?.invalid||error)   && (password?.dirty || password?.touched)}" formControlName="password"
                             type="password" class="form-control" id="password" placeholder="Şifre">
                         <div class="password-button" (click)="password1.type=='text'?password1.type='password':password1.type='text'">
                             {{password1.type=='text'?'Gizle':'Göster'}}
