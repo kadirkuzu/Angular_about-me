@@ -20,5 +20,13 @@ export class SideBarComponent implements AfterViewInit {
       this.closeEvent.emit(true)
     })
   }
+
+  isLoggedIn() {
+    return (localStorage.getItem('kkwebsitelogin') !== null)
+  }
+
+  logout(){
+    localStorage.removeItem('kkwebsitelogin')
+  }
   
 }

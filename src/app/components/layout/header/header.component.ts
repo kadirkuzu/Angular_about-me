@@ -9,7 +9,17 @@ import { Router } from '@angular/router';
 export class HeaderComponent {
   constructor(private router:Router){}
   openBar = false
+
   isActive(link:string){
     return this.router.url.includes(link)
   }
+
+  isLoggedIn() {
+    return (localStorage.getItem('kkwebsitelogin') !== null)
+  }
+
+  logout(){
+    localStorage.removeItem('kkwebsitelogin')
+  }
+
 }

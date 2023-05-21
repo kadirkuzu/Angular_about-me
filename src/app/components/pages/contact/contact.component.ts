@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { AngularEditorConfig } from '@kolkov/angular-editor';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-contact',
@@ -8,6 +9,7 @@ import { AngularEditorConfig } from '@kolkov/angular-editor';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
+  constructor(private toastr:ToastrService){}
   loginForm = new FormGroup({
     name: new FormControl('', [Validators.required]),
     email: new FormControl('', [Validators.required, Validators.pattern("[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}")]),
@@ -35,5 +37,10 @@ export class ContactComponent {
 
   clear(){
     this.loginForm.reset()
+  }
+  
+  send(){
+    this.toastr.success('Mesaj başarıyla gönderildi.')
+    this.clear()
   }
 }

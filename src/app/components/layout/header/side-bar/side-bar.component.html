@@ -11,7 +11,8 @@
             <div class="fw-bold" (click)="closeOffCanvas()" routerLink="contact">İletişim</div>  
         </div>
         <div class="mt-auto text-end">
-            <button class="btn btn-secondary" (click)="closeOffCanvas()" routerLink="login">Giriş</button>
+            <button class="btn btn-secondary" (click)="closeOffCanvas()" *ngIf="isLoggedIn()" routerLink="login">Giriş</button>
+            <button class="btn btn-danger" (click)="closeOffCanvas();logout()" *ngIf="!isLoggedIn()">Çıkış</button>
         </div>
     </div>
 </div>
