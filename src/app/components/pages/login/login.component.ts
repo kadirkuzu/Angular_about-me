@@ -27,9 +27,9 @@ export class LoginComponent {
     form.append('email', this.email!.value!);
     form.append('password', this.password!.value!);
     this.http.post('http://kadirkuzu.42web.io/login.php', form)
-      .subscribe(response => {
-        console.log(response);
-        
+      .subscribe((response:any) => {
+        if(response.result) this.toastr.success(response.message,'Success')
+        if(!response.result) this.toastr.error(response.message,'Error')
       });
   }
 }
