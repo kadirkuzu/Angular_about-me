@@ -1,0 +1,30 @@
+.left-image{
+    height: 100%;
+    object-fit: cover;
+    padding-left: 0 !important;
+    border-radius: 10px 0 0 10px;
+    @media screen and (max-width:992px){
+        border-radius:  0 0 10px 10px;
+    }
+}
+
+.right-image{
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 10px 10px 0;
+    @media screen and (max-width:992px){
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+.pl-0{
+    @media screen and (min-width:992px){
+        padding: 0 10px 0 0 !important;
+    }
+}
+
+.pr-0{
+    @media screen and (min-width:992px){
+        padding: 0 0 0 10px !important;
+    }
+}

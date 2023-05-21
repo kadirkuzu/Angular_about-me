@@ -1,1 +1,37 @@
-<p>contact works!</p>
+<div class="row justify-content-center">
+    <div class="col-12 col-md-8 col-lg-5">
+        <div class="main-card">
+            <form [formGroup]="loginForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Ad - Soyad</label>
+                    <input [ngClass]="{ 'is-invalid': name?.invalid   && (name?.dirty || name?.touched)}" formControlName="name"
+                        type="text" class="form-control" id="name" placeholder="Ad - Soyad">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input [ngClass]="{ 'is-invalid': email?.invalid   && (email?.dirty || email?.touched)}" formControlName="email"
+                        type="text" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Telefon</label>
+                    <input [ngClass]="{ 'is-invalid': phone?.invalid   && (phone?.dirty || phone?.touched)}" formControlName="phone"
+                        type="text" placeholder="+90" [prefix]="'+90'" class="form-control" id="phone" placeholder="Phone" mask="(000) 000 0000">
+                </div>
+                <div class="mb-3 w-100">
+                    <label for="notes">Note</label>
+                    <angular-editor [config]="editorConfig" formControlName="notes">
+
+                    </angular-editor>
+                </div>
+            </form>
+            <div class="row">
+                <div class="col-6">
+                    <button class="btn btn-secondary w-100" (click)="clear()">Temizle</button>
+                </div>
+                <div class="col-6">
+                    <button class="btn btn-primary w-100" [disabled]="loginForm.invalid">Gönder</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

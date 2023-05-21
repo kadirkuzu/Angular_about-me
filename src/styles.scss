@@ -2,6 +2,10 @@
 @import 'bootstrap' ;
 @import '../node_modules/ngx-toastr/toastr.css';
 @import '../node_modules/swiper/swiper-bundle.css';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
 html,
 body {
     height: 100%;
@@ -72,4 +76,8 @@ body {
     cursor: pointer;
     color: $primary;
     font-weight: 600;
+}
+
+.c-pointer{
+    cursor: pointer;
 }

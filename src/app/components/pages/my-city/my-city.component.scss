@@ -1,3 +1,27 @@
 swiper{
-    height: 600px !important;
+    height: calc( 100vh - 350px) !important;
+    img{
+        cursor: pointer;
+    }
+}
+
+.main-card{
+    &.swiper-container{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    margin-bottom: 200px;
+}
+
+.content{
+    .title{
+        padding-bottom: 5px;
+        border-bottom: 2px solid var(--bs-gray-300);
+    }
+}
+.h-100vh{
+    min-height: calc( 100vh - 100px) !important;
+    @media (max-width:991px){
+        height: auto !important;
+    }
 }

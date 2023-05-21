@@ -1,0 +1,26 @@
+<div class="row justify-content-center">
+    <div class="col-12 col-md-8 col-lg-5">
+        <div class="main-card">
+            <form action="http://localhost/backend/login.php" [formGroup]="loginForm">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email veya kullanıcı adı</label>
+                    <input [ngClass]="{ 'is-invalid': email?.invalid   && (email?.dirty || email?.touched)}" formControlName="email"
+                        type="text" class="form-control" id="email" placeholder="Email veya kullanıcı adı">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Şifre</label>
+                    <div class="w-100 position-relative">
+                        <input #password1 [ngClass]="{ 'is-invalid': password?.invalid   && (password?.dirty || password?.touched)}" formControlName="password"
+                            type="password" class="form-control" id="password" placeholder="Şifre">
+                        <div class="password-button" (click)="password1.type=='text'?password1.type='password':password1.type='text'">
+                            {{password1.type=='text'?'Gizle':'Göster'}}
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary w-100" [disabled]="loginForm.invalid" (click)="login()">Giriş</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

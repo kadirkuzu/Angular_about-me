@@ -1,7 +1,119 @@
-<div class="swiper-container">
+<div class="swiper-container main-card">
     <swiper [config]="config">
-        <ng-template *ngFor="let item of [0,1,2]; index as index" swiperSlide>
-            <img src="../../../../assets/images/siirt-fistigi.jpg">
+        <ng-template swiperSlide >
+            <img (click)="scrollToSection('siirt')" src="../../../../assets/images/siirt.jpg">
+        </ng-template>
+        <ng-template swiperSlide >
+            <img (click)="scrollToSection('siirt1')" src="../../../../assets/images/siirt1.jpg">
+        </ng-template>
+        <ng-template swiperSlide>
+            <img (click)="scrollToSection('siirt2')" src="../../../../assets/images/ihadisesi.jpg">
+        </ng-template>
+        <ng-template swiperSlide>
+            <img  (click)="scrollToSection('siirt3')"src="../../../../assets/images/siirt-fistigi.jpg">
         </ng-template>
     </swiper>
 </div>
+<div class="h-100vh">
+    <div class="main-card content" id="siirt">
+        <h2 class="title">Siirt Hakkında</h2>
+        <p>
+            Siirt, Türkiye'nin Güneydoğu Anadolu Bölgesi'nde yer alan bir ildir.
+            Siirt ili nüfusu: 331.070'tir. Bu nüfusun %72,4'ü şehirlerde yaşamaktadır (2020 sonu). İlin yüzölçümü 5.718  km2'dir.İlde yıllık nüfus artışı % 0,24 olmuştur. İl merkezinin denizden yüksekliği: 887 m.'dir.
+            2021 TÜİK verilerine göre 7 İlçe, 12 belediye, bu belediyelerde 63 mahalle, ayrıca 274 köy bulunmaktadır.
+        </p>
+        <p class="mt-2">
+            Siirt, dört mevsimin en güzel şekliyle yaşandığı iklimi, her türlü sebze ve meyvenin yetiştiği bereketli toprakları, el emeği göz nurunun ürünü olan battaniye ve kilimleri, şifa kaynağı Pervari Balı, iri taneli fıstığı, kendine has lezzeti olan Zivzik Narı, doğal güzellikleri, tarihi eserleri, bağrında barındırdığı evliyaları ile görülmeye değer bir yerdir. Kaplıcalar, türbeler, tarihi cami, kale ve köprüler Siirt’in tarihi ve turistik değerleri arasında oldukça önemli bir yere sahiptir.
+        </p>
+        <div class="mt-2">
+            <h4>Ne Yenir?</h4>
+            <p>Siirt’e özgü yemekler arasında, Büryan (Perive) et yemeği ve fes şeklinde tencerelerde pişirilen perde pilav vardır.</p>
+        </div>
+        <div class="mt-2">
+            <h4>Ne alınır?</h4>
+            <p>Bıttım sabunu, Siirt battaniyesi, Jirkan kilimi, meyan kökü ve fıstık Siirt’e has ürünlerdendir.</p>
+        </div>
+        <div class="mt-2">
+            <h4>Tarihçe</h4>
+            <p>Yazılı kaynaklara göre, M.Ö.2000 başlarında Hititler Döneminde önemli yerleşim yeri olmuştur. Daha sonra Frig, Lidya, Asur, Roma, Bizans, Selçuklu, Danişment, ilhanlı, Eretna ve Osmanlı hakimiyetlerini yaşamıştır.</p>
+        </div>
+    </div>
+</div>
+<div class="h-100vh">
+    <div class="main-card content" id="siirt1">
+        <h2 class="title">Tillo</h2>
+        <p>
+            Tillo ,önceki adıyla Aydınlar ; Siirt iline bağlı 7 ilçeden biridir. İlçe il merkezine uzaklığı 9 km’dir.
+        </p>
+        <div class="mt-2">
+            <h4>Tarihçe</h4>
+            <p>Tillo ilçesinin tarihi çok eski zamanlara dayanmaktadır. Birçok medeniyette ev sahipliği yapmıştır. 1514 çaldıran Seferi sırasında Yavuz Sultan Selim’in girişi ile ve Kürt yazar İdris-i Bitlis’in desteği ile Osmanlı topraklarına katılmıştır.  Tillo ilçesi hem İslam dini için hem de Hıristiyanlar için çok önemli bir yere sahiptir. Burada her iki dine ait yapılar bulunmaktadır. Tillo ilçesi Süryanicede Ruhlar Alemi anlamını taşımaktadır. Evliyalar kenti olarak da bilinir. Daha önce Nahiye olan Tillo ilçe olduktan sonra Aydınlar ismini almıştır. Daha sonra yapılan bir değişiklikle yerleşim yerlerin eski ismini alacağına dair bir yasa çıktı. Aydınlar ilçesi ismi Tillo olarak tekrar değiştirildi.</p>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <h4>Gezilecek yerler</h4>
+                <ul>
+                    <li>İbrahim Hakkı hz. Türbesi</li>
+                    <li>İsmail Fakirullah hz.Türbesi</li>
+                    <li>Ras-ıl Hacar Taşı</li>
+                    <li>Delikli Taş</li>
+                    <li>Tillo kalesi ve Cam Terası</li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-6 text-end p-2">
+                <img class="w-100" src="../../../../assets/images/seyir-terasi.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="h-100vh">
+    <div class="main-card content" id="siirt2">
+        <h2 class="title">Işık Hadisesi</h2>
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <p>
+                    İsmail Fakirullah Türbesi, Siirt'in Tillo ilçesinde yer alan bir yapı. İsmail Fakirullah'ın ölümünden sonra öğrencisi Erzurumlu İbrahim Hakkı tarafından 18. yüzyılda yaptırıldı.Türbedeki bir düzenek ile her yıl 21 Mart ve 23 Eylül tarihlerinde sabah güneşinin ışıkları sandukanın üzerine beş dakika yansıtılmaktadır.1960'ta yapılan restorasyon sırasında ışık düzeneği işlevini yitirdi.2011'de yapılan çalışmalarla düzenek tekrar işler hâle getirildi.Türbenin bir maketi, İstanbul'da bulunan Miniatürk'te sergilenmektedir. UNESCO, 2015'te türbeyi Dünya Mirası Geçici Listesi'ne ekledi. XVII. yüzyılda yaşamış İsmail Fakirullah’ın öğrencisi İbrahim Hakkı’nın vefatı ve Aydınlar’a defnedilmesinden sonra inşa edilen türbe etrafında hazire oluşmuştur. 2005 yılı yüzey araştırmasında, bu türbe ve hazirede günümüze kadar ulaşmış mezar taşları çalışılarak bunların sanat tarihi açısından çözümlemeleri yapılmıştır
+                </p>
+            </div>
+            <div class="col-12 col-lg-6">
+                <img class="w-100" src="../../../../assets/images/isik-hadisesi.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="h-100vh">
+    <div class="main-card content mb-5" id="siirt3">
+        <h2 class="title">Siirt Meşhur Yemekleri</h2>
+        <div class="mt-2">
+            <h4>Siirt Fıstığı</h4>
+            <p>
+                Bölgede yetişen diğer fıstık türlerine göre Siirt fıstığı, hem fiziksel olarak ve hem de lezzet bakımından diğerlerinden farklıdır. Siirt fıstığını bu kadar lezzetli ve ayrıcalıklı kılan, Siirt yöresinin iklimidir. Fıstık genellikle sıcak iklimi sevmektedir. Siirt iklimi diğer illere göre daha sıcak ve kurak geçmektedir. Siirt’e diğer illere göre nem miktarı çok az olduğundan dolayı, Siirt fıstığının arzuladığı ortam oluşmaktadır.
+                Siirt Fıstığı üretiminin büyük bir bölümü başta İkizbağlar (Tom Köyü) Bağtepe ve Tillo bölgesinde, Eruh, Şirvan ve Siirt İlçe merkezinin büyük bir kesiminde verimin çok iyi durumda olduğu tespit edilmiştir.
+            </p>
+        </div>
+        <div class="mt-2">
+            <h4>Büryan Kebabı</h4>
+            <p>
+                Siirt’in sembolik yemeklerinden biri olarak dikkat çeken Büryan, aynı zamanda en meşhurlarındandır. Şehri ziyaret ettiğinizde pek çok restorana giderek bu güzel kebabı yeme şansınız bulunmaktadır.
+                Yalnızca Siirt’te değil; Türkiye’nin pek çok noktasında keyifle yiyebileceğiniz bu yemeğin ünü şehrin sınırlarını çoktan aşmıştır. 2 – 3 metre derinlikteki bir kuyuda üzeri çamur ile kapatılarak pişirilen bu kebap, yapımı bir hayli zahmetli yemeklerdendir. Herhangi bir sos olmadan, yalnızca tereyağı ile pide üzerinde servis edilen bu kebap, görüntüsü ve lezzeti ile deneyenleri adeta kendine aşık etmektedir. Genellikle yazın hazırlanan bu yemek, Siirt’e gelen misafirlerin gözdelerinden biri halindedir. Evde yapılması mümkün olmayan bu yemeği, Büryan Kebabı yapan bir yerde denemelisiniz.
+            </p>
+        </div>
+        <div class="mt-2">
+            <h4>İçli Köfte(Kitel)</h4>
+            <p>
+                Zengin bir mutfağa sahip olan Siirt’in en önemli yemeklerinden olan Kitel, bölgenin yöresel köftesidir. Akdeniz ve Güneydoğu’da yapılan içli köfteye benzetilse de yediğinizde Siirt Kitelin farklı bir tat olduğunu görebilirsiniz.
+                Köftelik bulgurdan hazırlanan Siirt Kitel, incecik hamurun içine katılan kıyma, soğan ve reyhan ile hazır hale getirilmektedir. Hazırlanan iç ince açılan hamur ile kapatılır ve daha sonra pişirilir. Ağır bir yemek olan Siirt Kitel bir ana öğün olduğundan yerken başka bir yemeğe ihtiyacınız olmayacaktır.
+                Kitel yemeği genellikle evlerde yapılmaktadır. Yöresel yemekler hazırlayan dükkanlarda da bu güzel yemeği bulma şansınız bulunmaktadır.
+            </p>
+        </div>
+        <div class="mt-2">
+            <h4>Perde Pilavı</h4>
+            <p>
+                Anadolu’nun en ünlü lezzetlerinden olan Perde Pilavı, kendisine zengin Siirt mutfağında da genişçe bir yer bulmaktadır. Oldukça zahmetli bir yemek olan Perde Pilavına menüsünde büryan kebabı olan restoranların tümünde ulaşabilirsiniz.
+                Siirt kültüründe evlere gelen özel misafirlere ikram edilen Perde Pilavı, dıştan bakıldığında böreğe benzemektedir. Börekten çok daha bol bir iç harca sahip olan pilavda kızartılmış kekik veya tavuk eti, et suyu, badem, çam fıstığı, pirinç ve çeşitli baharatlar kullanılmaktadır. İç hazırlandıktan sonra tencereye yufka şeklinde sıvanmış bir hamur ile konulan ve üzeri yine hamurla kapatılan Perde Pilavı, piştikten sonra tabaklara börek gibi dilimlenerek servis edilmektedir.
+            </p>
+        </div>
+    </div>
+</div>
+

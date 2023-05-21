@@ -1,1 +1,76 @@
-<p>my-interests works!</p>
+<div class="main-card pl-0">
+    <div class="row">
+        <div class="col-12 col-lg-6 order-2 order-lg-1">
+            <img class="w-100 left-image" src="../../../../assets/images/software.jpg" alt="">
+        </div>
+        <div class="col-12 col-lg-6 order-1 order-lg-2">
+            <h2>Yazılım - Bilgisayar</h2>
+            <p>
+                Yazılım hobilerim arasında her zaman en ön sırada yer aldı. Bu bölümü okumadan önce de, her
+                zaman yazılım ve bilgisayarla ilgili alanlara yönelmek istemişimdir. Farklı diller öğrenebildiğin , 
+                fakat bu dilleri kullanarak sadece bilgisayarınla anlaşabildiğin bir dünya .
+            </p>
+            <p>
+                Şu anda sevdiğim mesleği yapmaktan dolayı çok mutluyum. Yazılım benim için gerçekten farklı bir dünyadır.
+                İçine girdiğinizde bu dünyanın , zamanın nasıl geçtiğini anlamazsınız . Bir süre sonra, en yakın arkadaşınızın bilgisayarınız olduğunu fark edersiniz.
+            </p>
+            <p>
+                Yazılım dünyasında geçirdiğim her an, beni daha da derinden bağlar. Bu dünya, sınırsız olanaklar ve keşfedilmeyi bekleyen birçok sorunla doludur.
+                Kendi yeteneklerimi ve sınırlarımı zorlayarak, bu dünyada sürekli olarak ilerlemek ve büyümek istiyorum.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="main-card mt-5 pr-0" *ngIf="team">
+    <div class="row">
+        <div class="col-12 col-lg-6 order-1">
+            <h2>Futbol</h2>
+            <p>
+                Biz yazılımcılar için spor yapmak önemlidir . Gün içerisinde zamanımızın çoğunluğu bilgisayar başında geçtiğinden sağlıklı bir 
+                yaşam için aktiviteler yapmamız gerekir. Bu aktivitelerden biri benim için futboldur.
+            </p>
+            <p>
+                Futbol, hobilerim arasında tutkulu bir şekilde yer alan ve beni heyecanlandıran bir aktivitedir.
+                Hem izlemeyi hem de oynamayı severim. Eskiden daha sık olsa da , tuttuğum takımın maçlarına giderim . Deplasmanları severim.
+            </p>
+            <p>
+                Futbol, fiziksel olarak aktif olmamı sağlar ve aynı zamanda rekabet duygumu da ortaya çıkarır. Hem keyif almak için , hem de kazanmak için
+                bir şey yaptığınız zaman o sizin vazgeçilmeziniz olur . Futbol da benim için öyle bir şey .
+            </p>
+            <div>
+                Türkiye'de tuttuğum takım {{team.team}}'dir.{{team.team}} ile ilgili bu seneye ait birkaç bilgi bırakacağım :
+                <ul>
+                    <li>Şu anki sıralaması : {{ team.rank }}</li>
+                    <li>Toplam puan : {{ team.point }}</li>
+                    <li>G/M/B : {{team.win}}/{{team.lose}}/{{team.play-team.win-team.lose}}</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6 order-2">
+            <img class="w-100 right-image" src="../../../../assets/images/futbol.jpg" alt="">
+        </div>
+    </div>
+</div>
+<div class="main-card mt-5 pl-0">
+    <div class="row">
+        <div class="col-12 col-lg-6 order-2 order-lg-1">
+            <img class="w-100 left-image" src="../../../../assets/images/csgo2.jpg" alt="">
+        </div>
+        <div class="col-12 col-lg-6 order-1 order-lg-2">
+            <h2>CS:GO</h2>
+            <p>
+                Oyun oynamak, hobilerim arasında en büyük tutkularımdan biridir ve özellikle Counter-Strike: Global Offensive (CS:GO) oynamaktan büyük keyif alırım. 
+                CS:GO, taktiksel oyun yapısı ve rekabetçi atmosferiyle beni kendine çeken bir dünyaya taşır.
+            </p>
+            <p>
+                CS:GO, aynı zamanda sosyal bir deneyim sunar. Arkadaşlarımla birlikte takım oluşturarak, takım çalışması ve iletişim becerilerimizi geliştiririz. Birlikte oynarken stratejiler oluşturur, taktikler üzerinde tartışırız ve birbirimize destek oluruz. 
+                Bu, hem oyun deneyimimizi zenginleştirir hem de arkadaşlıklarımızı güçlendirir.
+            </p>
+            <p>
+                CS:GO aynı zamanda rekabetçi bir ortam sunar. Rütbe sistemi ve sıralamalı maçlarla oyuncuların beceri seviyelerini ölçer. 
+                Her maçta kendimi geliştirme hedefiyle oynarken, diğer oyuncularla karşılaşarak yeteneklerimi test ederim. 
+                Bu rekabet duygusu, beni daha iyi bir oyuncu olmaya teşvik eder ve sürekli olarak kendimi geliştirmek için çalışırım.
+            </p>
+        </div>
+    </div>
+</div>

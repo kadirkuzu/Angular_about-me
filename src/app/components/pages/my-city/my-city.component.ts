@@ -12,4 +12,13 @@ export class MyCityComponent {
     navigation: true,
     pagination:true
   };
+
+  scrollToSection(sectionId: string) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      const scrollOffset = 150
+      const topPosition = section.getBoundingClientRect().top + window.pageYOffset - scrollOffset;
+      window.scrollTo({ top: topPosition, behavior: 'smooth' });
+    }
+  }
 }

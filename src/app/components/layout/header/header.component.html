@@ -9,27 +9,27 @@
             <div class="col-10 collapse">
                 <div class="row align-items-center">
                     <div class="col">
-                        <span class="title" routerLink="my-city">
-                            My City
-                        </span>
+                        <a class="title" routerLink="my-city" [class.active]="isActive('my-city')">
+                            Şehrim
+                        </a>
                     </div>
                     <div class="col">
-                        <span class="title" routerLink="our-legacy">
-                            Our Legacy
-                        </span>
+                        <a class="title" routerLink="our-team" [class.active]="isActive('our-team')">
+                            Takımımız
+                        </a>
                     </div>
                     <div class="col">
-                        <span class="title" routerLink="my-interests">
-                            My interests
-                        </span>
+                        <a class="title" routerLink="my-interests" [class.active]="isActive('my-interests')">
+                            İlgi Alanlarım 
+                        </a>
                     </div>
                     <div class="col">
-                        <span class="title" routerLink="contact">
-                            Contact
-                        </span>
+                        <a class="title" routerLink="contact" [class.active]="isActive('contact')">
+                            İletişim
+                        </a>
                     </div>
-                    <div class="col text-end title login" routerLink="login" >
-                        Login
+                    <div class="col text-end" routerLink="login">
+                        <button class="btn btn-secondary"> Giriş</button>
                     </div>
                 </div>
             </div>
